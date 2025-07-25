@@ -45,6 +45,18 @@ android {
     }
 }
 
+androidComponents {
+    val key = property("apikey")?.toString() ?: error(
+        "You should add apikey into gradle properties"
+    )
+    onVariants { variant ->
+        variant.buildConfigFields.put(
+            "WEATHER_API_KEY",
+            BuildConfigField("String", "\"$key\"", "API key for accessing the sevice")
+        )
+    }
+}
+
 dependencies {
 
     // Core Android
