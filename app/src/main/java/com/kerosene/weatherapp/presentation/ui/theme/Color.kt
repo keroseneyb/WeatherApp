@@ -1,4 +1,4 @@
-package com.kerosene.weatherapp.ui.theme
+package com.kerosene.weatherapp.presentation.ui.theme
 
 import androidx.compose.ui.graphics.Color
 
