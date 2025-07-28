@@ -9,6 +9,7 @@ import com.kerosene.weatherapp.data.repository.FavouriteRepositoryImpl
 import com.kerosene.weatherapp.data.repository.SearchRepositoryImpl
 import com.kerosene.weatherapp.data.repository.WeatherRepositoryImpl
 import com.kerosene.weatherapp.domain.repository.FavouriteRepository
+import com.kerosene.weatherapp.domain.repository.SearchRepository
 import com.kerosene.weatherapp.domain.repository.WeatherRepository
 import dagger.Binds
 import dagger.Module
@@ -27,7 +28,7 @@ interface DataModule {
 
     @ApplicationScope
     @Binds
-    fun bindSearchRepository(impl: SearchRepositoryImpl): FavouriteRepository
+    fun bindSearchRepository(impl: SearchRepositoryImpl): SearchRepository
 
     companion object {
 
