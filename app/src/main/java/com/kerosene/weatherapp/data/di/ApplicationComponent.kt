@@ -1,6 +1,7 @@
 package com.kerosene.weatherapp.data.di
 
 import android.content.Context
+import com.kerosene.weatherapp.presentation.screens.main.MainActivity
 import dagger.BindsInstance
 import dagger.Component
 
@@ -12,6 +13,8 @@ import dagger.Component
     ]
 )
 interface ApplicationComponent {
+
+    fun inject(activity: MainActivity)
 
     @Component.Factory
     interface Factory {
