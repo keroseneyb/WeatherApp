@@ -1,11 +1,11 @@
 package com.kerosene.weatherapp.data.mapper
 
-import android.icu.util.Calendar
 import com.kerosene.weatherapp.data.network.dto.WeatherCurrentDto
 import com.kerosene.weatherapp.data.network.dto.WeatherDto
 import com.kerosene.weatherapp.data.network.dto.WeatherForecastDto
 import com.kerosene.weatherapp.domain.entity.Forecast
 import com.kerosene.weatherapp.domain.entity.Weather
+import java.util.Calendar
 import java.util.Date
 
 private const val DROP_FIRST_DAY = 1
